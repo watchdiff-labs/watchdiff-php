@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Config;
 
-final readonly class ActiveHours
+final class ActiveHours
 {
     /** @param string[] $days lowercase day names, e.g. ["monday", "friday"]. Empty = every day. */
     public function __construct(
-        public string $from,
-        public string $to,
-        public array $days         = [],
-        public string $timezone    = 'UTC',
+        public readonly string $from,
+        public readonly string $to,
+        public readonly array $days         = [],
+        public readonly string $timezone    = 'UTC',
     ) {
     }
 

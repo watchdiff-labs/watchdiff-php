@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Model;
 
-final readonly class Snapshot
+final class Snapshot
 {
     public function __construct(
-        public string $url,
-        public string $content,
-        public \DateTimeImmutable $capturedAt,
-        public int $statusCode = 200,
-        public ?float $responseTimeMs = null,
+        public readonly string $url,
+        public readonly string $content,
+        public readonly \DateTimeImmutable $capturedAt,
+        public readonly int $statusCode = 200,
+        public readonly ?float $responseTimeMs = null,
     ) {
     }
 

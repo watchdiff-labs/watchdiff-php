@@ -6,15 +6,15 @@ namespace WatchDiff\Core\Config;
 
 use WatchDiff\Core\Model\DiffReport;
 
-final readonly class AiProvider
+final class AiProvider
 {
     /** @param (\Closure(string, DiffReport): string)|null $custom */
     public function __construct(
-        public AiProviderType $type,
-        public string $apiKey    = '',
-        public ?string $model    = null,
-        public ?string $baseUrl  = null,
-        public ?\Closure $custom = null,
+        public readonly AiProviderType $type,
+        public readonly string $apiKey    = '',
+        public readonly ?string $model    = null,
+        public readonly ?string $baseUrl  = null,
+        public readonly ?\Closure $custom = null,
     ) {
     }
 

@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Config;
 
-final readonly class BasicAuth
+final class BasicAuth
 {
     public function __construct(
-        public string $user,
-        public string $pass,
+        public readonly string $user,
+        public readonly string $pass,
     ) {
     }
 

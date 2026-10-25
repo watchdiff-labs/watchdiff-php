@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Db;
 
-final readonly class DbDiffReport
+final class DbDiffReport
 {
     /** @param DbChange[] $changes */
     public function __construct(
-        public string $connectionString,
-        public string $table,
-        public string $label,
-        public DbSnapshot $before,
-        public DbSnapshot $after,
-        public array $changes,
-        public DbDiffMode $diffMode,
-        public \DateTimeImmutable $comparedAt,
+        public readonly string $connectionString,
+        public readonly string $table,
+        public readonly string $label,
+        public readonly DbSnapshot $before,
+        public readonly DbSnapshot $after,
+        public readonly array $changes,
+        public readonly DbDiffMode $diffMode,
+        public readonly \DateTimeImmutable $comparedAt,
     ) {
     }
 

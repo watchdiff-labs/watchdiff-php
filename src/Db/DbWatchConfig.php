@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Db;
 
-final readonly class DbWatchConfig
+final class DbWatchConfig
 {
     /**
      * @param string[] $primaryKey
@@ -16,27 +16,27 @@ final readonly class DbWatchConfig
      * @param (\Closure(\Throwable): void)|null $onError
      */
     public function __construct(
-        public string $connectionString,
-        public string $table,
-        public DbDiffMode $diffMode = DbDiffMode::Row,
-        public array $primaryKey = [],
-        public array $ignoreColumns = [],
-        public ?string $query = null,
-        public int $interval = 300,
-        public ?string $label = null,
-        public ?string $id = null,
-        public bool $alertOnInsert = true,
-        public bool $alertOnDelete = true,
-        public bool $alertOnUpdate = true,
-        public float $threshold = 0.0,
-        public ?\Closure $onChange = null,
-        public ?\Closure $onSchemaChange = null,
-        public ?\Closure $onThreshold = null,
-        public ?\Closure $onError = null,
-        public array $webhooks = [],
-        public bool $allowPrivateUrls = false,
-        public int $cooldown = 0,
-        public bool $dryRun = false,
+        public readonly string $connectionString,
+        public readonly string $table,
+        public readonly DbDiffMode $diffMode = DbDiffMode::Row,
+        public readonly array $primaryKey = [],
+        public readonly array $ignoreColumns = [],
+        public readonly ?string $query = null,
+        public readonly int $interval = 300,
+        public readonly ?string $label = null,
+        public readonly ?string $id = null,
+        public readonly bool $alertOnInsert = true,
+        public readonly bool $alertOnDelete = true,
+        public readonly bool $alertOnUpdate = true,
+        public readonly float $threshold = 0.0,
+        public readonly ?\Closure $onChange = null,
+        public readonly ?\Closure $onSchemaChange = null,
+        public readonly ?\Closure $onThreshold = null,
+        public readonly ?\Closure $onError = null,
+        public readonly array $webhooks = [],
+        public readonly bool $allowPrivateUrls = false,
+        public readonly int $cooldown = 0,
+        public readonly bool $dryRun = false,
     ) {
     }
 

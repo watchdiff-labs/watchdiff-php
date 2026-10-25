@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Db;
 
-final readonly class DbSnapshot
+final class DbSnapshot
 {
-    public int $rowCount;
-    public string $checksum;
+    public readonly int $rowCount;
+    public readonly string $checksum;
 
     /**
      * @param array<int, array<string, mixed>> $rows
      * @param array<int, array{name: string, type: string, nullable: bool, primaryKey: bool, defaultValue: mixed}> $columns
      */
     public function __construct(
-        public array $rows,
-        public array $columns,
-        public \DateTimeImmutable $capturedAt,
+        public readonly array $rows,
+        public readonly array $columns,
+        public readonly \DateTimeImmutable $capturedAt,
     ) {
         $this->rowCount = \count($this->rows);
         // A cheap content fingerprint for "did the row set change at all"

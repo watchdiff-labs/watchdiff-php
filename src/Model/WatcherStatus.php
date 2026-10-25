@@ -4,22 +4,22 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Model;
 
-final readonly class WatcherStatus
+final class WatcherStatus
 {
     public function __construct(
-        public string $url,
-        public ?string $id,
-        public string $label,
-        public ?string $target,
-        public int $interval,
-        public bool $paused,
-        public bool $inMaintenance,
-        public ?\DateTimeImmutable $lastCheckAt,
-        public ?\DateTimeImmutable $nextCheckAt,
-        public ?\DateTimeImmutable $lastChangeAt,
-        public int $checksCount,
-        public int $changesCount,
-        public int $errorsCount,
+        public readonly string $url,
+        public readonly ?string $id,
+        public readonly string $label,
+        public readonly ?string $target,
+        public readonly int $interval,
+        public readonly bool $paused,
+        public readonly bool $inMaintenance,
+        public readonly ?\DateTimeImmutable $lastCheckAt,
+        public readonly ?\DateTimeImmutable $nextCheckAt,
+        public readonly ?\DateTimeImmutable $lastChangeAt,
+        public readonly int $checksCount,
+        public readonly int $changesCount,
+        public readonly int $errorsCount,
     ) {
     }
 }

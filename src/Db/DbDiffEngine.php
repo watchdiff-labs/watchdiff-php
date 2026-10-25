@@ -30,7 +30,7 @@ final class DbDiffEngine
         foreach ($afterIndex as $rowKey => $row) {
             if (!isset($beforeIndex[$rowKey])) {
                 if ($config->alertOnInsert) {
-                    $changes[] = new DbChange(DbChangeKind::Inserted, row: $row, rowKey: [] !== $primaryKey ? $rowKey : null);
+                    $changes[] = new DbChange(DbChangeKind::Inserted, row: $row, rowKey: [] !== $primaryKey ? (string) $rowKey : null);
                 }
 
                 continue;
@@ -42,14 +42,14 @@ final class DbDiffEngine
 
             $modifications = $this->diffColumns($beforeIndex[$rowKey], $row, $ignore);
             if ([] !== $modifications && $config->alertOnUpdate) {
-                $changes[] = new DbChange(DbChangeKind::Updated, rowKey: $rowKey, modifications: $modifications);
+                $changes[] = new DbChange(DbChangeKind::Updated, rowKey: (string) $rowKey, modifications: $modifications);
             }
         }
 
         if ($config->alertOnDelete) {
             foreach ($beforeIndex as $rowKey => $row) {
                 if (!isset($afterIndex[$rowKey])) {
-                    $changes[] = new DbChange(DbChangeKind::Deleted, row: $row, rowKey: [] !== $primaryKey ? $rowKey : null);
+                    $changes[] = new DbChange(DbChangeKind::Deleted, row: $row, rowKey: [] !== $primaryKey ? (string) $rowKey : null);
                 }
             }
         }

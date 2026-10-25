@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Config;
 
-final readonly class MaintenanceWindow
+final class MaintenanceWindow
 {
     public function __construct(
-        public \DateTimeImmutable $from,
-        public \DateTimeImmutable $to,
+        public readonly \DateTimeImmutable $from,
+        public readonly \DateTimeImmutable $to,
     ) {
     }
 

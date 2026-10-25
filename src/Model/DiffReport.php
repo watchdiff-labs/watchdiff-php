@@ -6,18 +6,18 @@ namespace WatchDiff\Core\Model;
 
 use WatchDiff\Core\Enum\DiffMode;
 
-final readonly class DiffReport
+final class DiffReport
 {
     /** @param Change[] $changes */
     public function __construct(
-        public string $url,
-        public string $label,
-        public Snapshot $before,
-        public Snapshot $after,
-        public array $changes,
-        public DiffMode $diffMode,
-        public \DateTimeImmutable $comparedAt,
-        public ?string $aiSummary = null,
+        public readonly string $url,
+        public readonly string $label,
+        public readonly Snapshot $before,
+        public readonly Snapshot $after,
+        public readonly array $changes,
+        public readonly DiffMode $diffMode,
+        public readonly \DateTimeImmutable $comparedAt,
+        public readonly ?string $aiSummary = null,
     ) {
     }
 

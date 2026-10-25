@@ -6,6 +6,13 @@ parameters:
     paths:
         - src
     tmpDir: var/phpstan
+    # CI runs this across PHP 8.1-8.4, each with its own `composer install`
+    # (different PHPUnit/PHPStan versions resolve per PHP version). Native
+    # stub inference for some return types (e.g. DateTimeImmutable::modify())
+    # differs enough across that matrix that a baselined "dead code" entry on
+    # one PHP version can be a real, correct error on another - an unmatched
+    # baseline entry must not fail the build on its own.
+    reportUnmatchedIgnoredErrors: false
     # These wrap optional composer dependencies (not installed by default,
     # see composer.json "suggest") and reference classes PHPStan can't see
     # without them installed. Analysed manually with the dependency present

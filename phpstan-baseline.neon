@@ -729,3 +729,13 @@ parameters:
 			message: "#^Cannot cast mixed to string\\.$#"
 			count: 7
 			path: src/WatchDiff.php
+
+		-
+			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
+			count: 1
+			path: src/WatchDiff.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between false and DateTimeImmutable will always evaluate to false\\.$#"
+			count: 1
+			path: src/WatchDiff.php

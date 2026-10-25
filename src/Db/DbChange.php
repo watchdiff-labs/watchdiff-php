@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace WatchDiff\Core\Db;
 
-final readonly class DbChange
+final class DbChange
 {
     /**
      * @param array<string, mixed>|null                                        $row
      * @param array<int, array{column: string, before: mixed, after: mixed}>|null $modifications
      */
     public function __construct(
-        public DbChangeKind $kind,
-        public ?array $row = null,
-        public ?string $rowKey = null,
-        public ?array $modifications = null,
-        public ?string $column = null,
-        public ?string $context = null,
+        public readonly DbChangeKind $kind,
+        public readonly ?array $row = null,
+        public readonly ?string $rowKey = null,
+        public readonly ?array $modifications = null,
+        public readonly ?string $column = null,
+        public readonly ?string $context = null,
     ) {
     }
 

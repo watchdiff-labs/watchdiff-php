@@ -6,13 +6,13 @@ namespace WatchDiff\Core\Model;
 
 use WatchDiff\Core\Enum\ChangeKind;
 
-final readonly class Change
+final class Change
 {
     public function __construct(
-        public ChangeKind $kind,
-        public ?string $before     = null,
-        public ?string $after      = null,
-        public ?string $context    = null,
+        public readonly ChangeKind $kind,
+        public readonly ?string $before     = null,
+        public readonly ?string $after      = null,
+        public readonly ?string $context    = null,
     ) {
     }
 

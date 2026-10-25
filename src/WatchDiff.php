@@ -448,6 +448,10 @@ final class WatchDiff
     private function pruneByRetention(string $key, int $retentionDays): void
     {
         $cutoff = (new \DateTimeImmutable())->modify(sprintf('-%d days', $retentionDays));
+        if (false === $cutoff) {
+            return;
+        }
+
         $this->store->pruneSnapshotsOlderThan($key, $cutoff);
     }
 
@@ -697,6 +701,7 @@ final class WatchDiff
 
             $lastCheckAt = isset($state['lastCheckAt']) ? new \DateTimeImmutable((string) $state['lastCheckAt']) : null;
             $interval    = max($config->interval, $this->minInterval, $config->minInterval ?? 0);
+            $nextCheckAt = null !== $latest ? $latest->capturedAt->modify(sprintf('+%d seconds', $interval)) : null;
 
             $statuses[] = new WatcherStatus(
                 url: $config->url,
@@ -707,7 +712,7 @@ final class WatchDiff
                 paused: (bool) ($state['paused'] ?? false),
                 inMaintenance: $inMaintenance,
                 lastCheckAt: $lastCheckAt,
-                nextCheckAt: null !== $latest ? $latest->capturedAt->modify(sprintf('+%d seconds', $interval)) : null,
+                nextCheckAt: false !== $nextCheckAt ? $nextCheckAt : null,
                 lastChangeAt: isset($state['lastChangeAt']) ? new \DateTimeImmutable((string) $state['lastChangeAt']) : null,
                 checksCount: (int) ($state['checksCount'] ?? 0),
                 changesCount: (int) ($state['changesCount'] ?? 0),
