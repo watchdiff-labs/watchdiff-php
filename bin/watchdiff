@@ -1,0 +1,52 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use Symfony\Component\Console\Application;
+use WatchDiff\Core\Console\CheckCommand;
+use WatchDiff\Core\Console\ClearCommand;
+use WatchDiff\Core\Console\CleanCommand;
+use WatchDiff\Core\Console\CompareCommand;
+use WatchDiff\Core\Console\DbCommand;
+use WatchDiff\Core\Console\DiffCommand;
+use WatchDiff\Core\Console\ExportCommand;
+use WatchDiff\Core\Console\HistoryCommand;
+use WatchDiff\Core\Console\InitCommand;
+use WatchDiff\Core\Console\ListCommand;
+use WatchDiff\Core\Console\PauseCommand;
+use WatchDiff\Core\Console\ReportsCommand;
+use WatchDiff\Core\Console\ResumeCommand;
+use WatchDiff\Core\Console\ServeCommand;
+use WatchDiff\Core\Console\SnapshotCommand;
+use WatchDiff\Core\Console\TickCommand;
+use WatchDiff\Core\Console\ValidateCommand;
+
+foreach ([__DIR__.'/../../../autoload.php', __DIR__.'/../vendor/autoload.php'] as $autoload) {
+    if (is_file($autoload)) {
+        require $autoload;
+        break;
+    }
+}
+
+$application = new Application('watchdiff', 'dev');
+$application->addCommands([
+    new InitCommand(),
+    new ValidateCommand(),
+    new TickCommand(),
+    new CheckCommand(),
+    new DiffCommand(),
+    new HistoryCommand(),
+    new ListCommand(),
+    new PauseCommand(),
+    new ResumeCommand(),
+    new SnapshotCommand(),
+    new CleanCommand(),
+    new CompareCommand(),
+    new ExportCommand(),
+    new DbCommand(),
+    new ServeCommand(),
+    new ReportsCommand(),
+    new ClearCommand(),
+]);
+$application->run();

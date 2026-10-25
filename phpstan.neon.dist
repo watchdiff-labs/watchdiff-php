@@ -1,0 +1,16 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+    paths:
+        - src
+    tmpDir: var/phpstan
+    # These wrap optional composer dependencies (not installed by default,
+    # see composer.json "suggest") and reference classes PHPStan can't see
+    # without them installed. Analysed manually with the dependency present
+    # before release instead.
+    excludePaths:
+        - src/Export/XlsxExporter.php
+        - src/Notify/EmailSender.php
+        - src/Fetch/BrowserFetcher.php

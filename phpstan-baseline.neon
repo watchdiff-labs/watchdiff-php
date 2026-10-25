@@ -1,0 +1,731 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot access offset 'content' on mixed\\.$#"
+			count: 2
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Cannot access offset 'message' on mixed\\.$#"
+			count: 1
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Cannot access offset 'parts' on mixed\\.$#"
+			count: 1
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Cannot access offset 'text' on mixed\\.$#"
+			count: 2
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Cannot access offset 0 on mixed\\.$#"
+			count: 4
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 3
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Method WatchDiff\\\\Core\\\\Ai\\\\AiSummarizer\\:\\:post\\(\\) should return array\\<string, mixed\\> but returns array\\.$#"
+			count: 1
+			path: src/Ai/AiSummarizer.php
+
+		-
+			message: "#^Parameter \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/CheckCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ClearCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$urlA of method WatchDiff\\\\Core\\\\WatchDiff\\:\\:compareUrls\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/CompareCommand.php
+
+		-
+			message: "#^Parameter \\#2 \\$urlB of method WatchDiff\\\\Core\\\\WatchDiff\\:\\:compareUrls\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/CompareCommand.php
+
+		-
+			message: "#^Cannot access offset 'apiKey' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'baseUrl' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'consecutiveFailures' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'consecutiveSuccesses' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'days' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'from' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'model' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'pass' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'respectRetryAfter' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'timezone' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'to' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'type' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot access offset 'user' on mixed\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 4
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function array_map expects \\(callable\\(mixed\\)\\: mixed\\)\\|null, Closure\\(array\\)\\: WatchDiff\\\\Core\\\\Config\\\\MaintenanceWindow given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#1 \\$user of class WatchDiff\\\\Core\\\\Config\\\\BasicAuth constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of static method WatchDiff\\\\Core\\\\Config\\\\AiProviderType\\:\\:from\\(\\) expects int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of static method WatchDiff\\\\Core\\\\Enum\\\\DiffMode\\:\\:from\\(\\) expects int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of static method WatchDiff\\\\Core\\\\Enum\\\\DiffMode\\:\\:tryFrom\\(\\) expects int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function array_map expects array, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#2 \\$pass of class WatchDiff\\\\Core\\\\Config\\\\BasicAuth constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\#3 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 4
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$aiPrompt of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects Closure\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$aiSummary of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$alertIfNoChangeAfter of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$alertOnFirstCheck of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$alertOnStatusChange of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$apiKey of class WatchDiff\\\\Core\\\\Config\\\\AiProvider constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$archiveHtml of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$baseUrl of class WatchDiff\\\\Core\\\\Config\\\\AiProvider constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$certHost of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$certPort of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$changeSpikeThreshold of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$changeSpikeWindow of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$changeThreshold of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects float, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$confirmAfter of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$consecutiveFailures of class WatchDiff\\\\Core\\\\Config\\\\FailurePolicy constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$consecutiveSuccesses of class WatchDiff\\\\Core\\\\Config\\\\FailurePolicy constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$cookies of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string, string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$cooldown of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$days of class WatchDiff\\\\Core\\\\Config\\\\ActiveHours constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$dryRun of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$expectedStatus of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$from of class WatchDiff\\\\Core\\\\Config\\\\ActiveHours constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$headers of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$id of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$ignoreNumbers of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$interval of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$jitter of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects float, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$jsonPath of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$label of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$localPath of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$maxRetryDelayMs of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$maxSnapshots of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$minInterval of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$model of class WatchDiff\\\\Core\\\\Config\\\\AiProvider constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$requestBody of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string, mixed\\>\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$respectRetryAfter of class WatchDiff\\\\Core\\\\Config\\\\FailurePolicy constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$retentionDays of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$retries of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$retryDelayMs of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$schedule of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$tags of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$target of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$timezone of class WatchDiff\\\\Core\\\\Config\\\\ActiveHours constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$to of class WatchDiff\\\\Core\\\\Config\\\\ActiveHours constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$userAgents of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$warnDaysBeforeExpiry of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$webhookHeaders of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string, string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$webhookRetries of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$webhooks of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/ConfigFile.php
+
+		-
+			message: "#^Parameter \\$connectionString of class WatchDiff\\\\Core\\\\Db\\\\DbWatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/DbCommand.php
+
+		-
+			message: "#^Parameter \\$ignoreColumns of class WatchDiff\\\\Core\\\\Db\\\\DbWatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/DbCommand.php
+
+		-
+			message: "#^Parameter \\$primaryKey of class WatchDiff\\\\Core\\\\Db\\\\DbWatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/DbCommand.php
+
+		-
+			message: "#^Parameter \\$table of class WatchDiff\\\\Core\\\\Db\\\\DbWatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/DbCommand.php
+
+		-
+			message: "#^Parameter \\$webhooks of class WatchDiff\\\\Core\\\\Db\\\\DbWatchConfig constructor expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Console/DbCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/DiffCommand.php
+
+		-
+			message: "#^Cannot cast mixed to float\\.$#"
+			count: 1
+			path: src/Console/EnvOption.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Console/EnvOption.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Console/EnvOption.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ExportCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/HistoryCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function file_put_contents expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/InitCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function is_file expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/InitCommand.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Console/InitCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$tagOrId of method WatchDiff\\\\Core\\\\WatchDiff\\:\\:pause\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/PauseCommand.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/PauseCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ReportsCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$tagOrId of method WatchDiff\\\\Core\\\\WatchDiff\\:\\:resume\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/ResumeCommand.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Console/ResumeCommand.php
+
+		-
+			message: "#^While loop condition is always true\\.$#"
+			count: 1
+			path: src/Console/ServeCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of class WatchDiff\\\\Core\\\\Config\\\\WatchConfig constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Console/SnapshotCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of static method WatchDiff\\\\Core\\\\Db\\\\DbChangeKind\\:\\:from\\(\\) expects int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbChange.php
+
+		-
+			message: "#^Parameter \\$column of class WatchDiff\\\\Core\\\\Db\\\\DbChange constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbChange.php
+
+		-
+			message: "#^Parameter \\$context of class WatchDiff\\\\Core\\\\Db\\\\DbChange constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbChange.php
+
+		-
+			message: "#^Parameter \\$modifications of class WatchDiff\\\\Core\\\\Db\\\\DbChange constructor expects array\\<int, array\\{column\\: string, before\\: mixed, after\\: mixed\\}\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbChange.php
+
+		-
+			message: "#^Parameter \\$row of class WatchDiff\\\\Core\\\\Db\\\\DbChange constructor expects array\\<string, mixed\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbChange.php
+
+		-
+			message: "#^Parameter \\$rowKey of class WatchDiff\\\\Core\\\\Db\\\\DbChange constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbChange.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Db/DbDiffEngine.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 4
+			path: src/Db/DbFetcher.php
+
+		-
+			message: "#^Parameter \\#1 \\$datetime of class DateTimeImmutable constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbSnapshot.php
+
+		-
+			message: "#^Parameter \\$columns of class WatchDiff\\\\Core\\\\Db\\\\DbSnapshot constructor expects array\\<int, array\\{name\\: string, type\\: string, nullable\\: bool, primaryKey\\: bool, defaultValue\\: mixed\\}\\>, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbSnapshot.php
+
+		-
+			message: "#^Parameter \\$rows of class WatchDiff\\\\Core\\\\Db\\\\DbSnapshot constructor expects array\\<int, array\\<string, mixed\\>\\>, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbSnapshot.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 3
+			path: src/Db/DbWatcher.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 4
+			path: src/Db/DbWatcher.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of static method WatchDiff\\\\Core\\\\Db\\\\DbSnapshot\\:\\:fromArray\\(\\) expects array\\<string, mixed\\>, mixed given\\.$#"
+			count: 1
+			path: src/Db/DbWatcher.php
+
+		-
+			message: "#^Method WatchDiff\\\\Core\\\\Diff\\\\JsonDiffEngine\\:\\:isAssoc\\(\\) has parameter \\$value with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Diff/JsonDiffEngine.php
+
+		-
+			message: "#^Method WatchDiff\\\\Core\\\\Diff\\\\JsonDiffEngine\\:\\:walk\\(\\) has parameter \\$changes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Diff/JsonDiffEngine.php
+
+		-
+			message: "#^Method WatchDiff\\\\Core\\\\Diff\\\\LineDiffEngine\\:\\:tokensToChanges\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Diff/LineDiffEngine.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of static method WatchDiff\\\\Core\\\\Enum\\\\ChangeKind\\:\\:from\\(\\) expects int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Model/Change.php
+
+		-
+			message: "#^Parameter \\$after of class WatchDiff\\\\Core\\\\Model\\\\Change constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Model/Change.php
+
+		-
+			message: "#^Parameter \\$before of class WatchDiff\\\\Core\\\\Model\\\\Change constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Model/Change.php
+
+		-
+			message: "#^Parameter \\$context of class WatchDiff\\\\Core\\\\Model\\\\Change constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Model/Change.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function array_map expects \\(callable\\(mixed\\)\\: mixed\\)\\|null, Closure\\(array\\)\\: WatchDiff\\\\Core\\\\Model\\\\Change given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of static method WatchDiff\\\\Core\\\\Model\\\\Snapshot\\:\\:fromArray\\(\\) expects array\\<string, mixed\\>, mixed given\\.$#"
+			count: 2
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\#1 \\$datetime of class DateTimeImmutable constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of static method WatchDiff\\\\Core\\\\Enum\\\\DiffMode\\:\\:from\\(\\) expects int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function array_map expects array, mixed given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\$aiSummary of class WatchDiff\\\\Core\\\\Model\\\\DiffReport constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\$label of class WatchDiff\\\\Core\\\\Model\\\\DiffReport constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\$url of class WatchDiff\\\\Core\\\\Model\\\\DiffReport constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Model/DiffReport.php
+
+		-
+			message: "#^Parameter \\#1 \\$datetime of class DateTimeImmutable constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Model/Snapshot.php
+
+		-
+			message: "#^Parameter \\$content of class WatchDiff\\\\Core\\\\Model\\\\Snapshot constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Model/Snapshot.php
+
+		-
+			message: "#^Parameter \\$responseTimeMs of class WatchDiff\\\\Core\\\\Model\\\\Snapshot constructor expects float\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Model/Snapshot.php
+
+		-
+			message: "#^Parameter \\$statusCode of class WatchDiff\\\\Core\\\\Model\\\\Snapshot constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Model/Snapshot.php
+
+		-
+			message: "#^Parameter \\$url of class WatchDiff\\\\Core\\\\Model\\\\Snapshot constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Model/Snapshot.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Store/JsonStore.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function array_map expects \\(callable\\(mixed\\)\\: mixed\\)\\|null, 'strval' given\\.$#"
+			count: 1
+			path: src/Store/JsonStore.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of static method WatchDiff\\\\Core\\\\Model\\\\DiffReport\\:\\:fromArray\\(\\) expects array\\<string, mixed\\>, array given\\.$#"
+			count: 1
+			path: src/Store/SqliteStore.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of static method WatchDiff\\\\Core\\\\Model\\\\Snapshot\\:\\:fromArray\\(\\) expects array\\<string, mixed\\>, array given\\.$#"
+			count: 2
+			path: src/Store/SqliteStore.php
+
+		-
+			message: "#^Cannot access offset 'firstSeenAt' on mixed\\.$#"
+			count: 1
+			path: src/WatchDiff.php
+
+		-
+			message: "#^Cannot access offset 'peer_certificate' on mixed\\.$#"
+			count: 1
+			path: src/WatchDiff.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 3
+			path: src/WatchDiff.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 7
+			path: src/WatchDiff.php
