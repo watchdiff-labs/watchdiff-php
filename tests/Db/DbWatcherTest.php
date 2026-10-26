@@ -259,7 +259,7 @@ final class DbWatcherTest extends TestCase
         $pdo->exec("UPDATE products SET price = 12.99 WHERE id = 1");
         $watcher->checkOnce($config->key());
 
-        self::assertNull($httpClient->getLastRequest());
+        self::assertFalse($httpClient->getLastRequest());
         self::assertNotNull($caught);
         self::assertStringContainsString('private/reserved', $caught->getMessage());
     }
